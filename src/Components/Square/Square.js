@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styles from "./Square.js";
+import "./Square.css";
 
 const Square = ({ value, onClick }) => {
   return (

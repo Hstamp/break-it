@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./Game.css";
 import Board from "../Board/Board";
 
 export default class Game extends React.Component {
@@ -64,10 +65,10 @@ export default class Game extends React.Component {
 
     return (
       <div className="game">
-        <div className="game-board">
+        <div className="gameboard">
           <Board squares={current.squares} onClick={i => this.handleClick(i)} />
         </div>
-        <div className="game-info">
+        <div className="gameinfo">
           <div>{status}</div>
           <ol>{moves}</ol>
         </div>
